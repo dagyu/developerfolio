@@ -1,0 +1,85 @@
+.greeting {
+  height: 90vh;
+  .description-block {
+    width: 50%;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+    h1 {
+      .wave-emoji {
+        animation-duration: 1.8s;
+        animation-iteration-count: infinite;
+        animation-name: wave;
+        display: inline-block;
+        transform-origin: 70% 70%;
+      }
+    }
+    p {
+      font-size: 2vw;
+      font-weight: 200;
+      @include media-breakpoint-down(md) {
+        font-weight: 300;
+        font-size: large;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: medium;
+      }
+    }
+    a {
+      font-size: 1.5vw;
+      @include media-breakpoint-down(md) {
+        font-size: 15px;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .photo-block {
+    .profile-image {
+      height: 512px;
+      width: 512px;
+
+      @include media-breakpoint-down(md) {
+        height: 256px;
+        width: 256px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        height: 200px;
+        width: 200px;
+      }
+
+      @media (max-height: 600px) {
+        height: 64px;
+        width: 64px;
+      }
+    }
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
