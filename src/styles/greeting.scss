@@ -42,12 +42,12 @@
       height: 400px;
       width: 400px;
 
-      @media (max-height: 600px) {
-        display: none;
-      }
       @include media-breakpoint-down(lg) {
         height: 256px;
         width: 256px;
+        @media (max-height: 600px) {
+          display: none;
+        }
       }
 
       @include media-breakpoint-down(sm) {
