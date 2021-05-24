@@ -7,7 +7,7 @@ const experiences = [
     role: "Software Engineer/Full Stack Developer",
     typeOfWork: "freelance",
     desc: `I developed a mobile app with [tomgeek27](https://github.com/tomgeek27) and [Alice Paracolli](https://www.behance.net/aaliceparaf66a) for a client. 
-    This app monitors diaphragmatic breathing via the accelerometer sensor and analyzes the respiratory chart obtained,
+    The app monitors diaphragmatic breathing via the accelerometer sensor and it analyzes the obtained respiratory chart,
     if you are curious see it on [Google Play](https://play.google.com/store/apps/details?id=com.ritmu.app) or on [App Store](https://apps.apple.com/us/app/id1514766559).
     This was a really challenging experience because It was the first time I faced a real world case. 
     In particular I designed the architecture, developed the whole back-end part, developed an 

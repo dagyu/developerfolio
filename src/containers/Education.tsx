@@ -5,7 +5,7 @@ const education = [
   {
     duration: "2018 - in progress",
     schoolName: "University of Milan",
-    subHeader: "Master’s Degree",
+    subHeader: "Master of Science",
     logo: "https://upload.wikimedia.org/wikipedia/en/e/e4/University_of_Milan_logo.png",
     desc: "",
     descBullets: [],
@@ -20,7 +20,7 @@ const education = [
   {
     duration: "2015 - 2018",
     schoolName: "University of Milan",
-    subHeader: "Bachelor Degree",
+    subHeader: "Bachelor of Science",
     logo: "https://upload.wikimedia.org/wikipedia/en/e/e4/University_of_Milan_logo.png",
     desc: "**Final mark**: 108/110\n\n**Thesis title**: DSL in Neverlang for reflective petri nets\n\n**Supervisor**: [Walter Cazzola](https://cazzola.di.unimi.it/)",
   },

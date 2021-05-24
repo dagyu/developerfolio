@@ -33,8 +33,9 @@ export function Contacts() {
         <div className="row">
           <div className="col">
             <h1 className="text-uppercase">Contact me!</h1>
-            <h4 className="text-uppercase text-secondary">
-              Discuss a project or just want to say hi? My inbox is open for all
+            <h4 className="text-secondary">
+              For any further information feel free to contact me! I am
+              enthusiast to start new challenges and experiences
               {emoji("🤗🤗")}
             </h4>
           </div>

@@ -136,11 +136,11 @@ export function Skills() {
   return (
     <Fade direction="left" duration={1000} triggerOnce>
       <div className="container-lg">
-        <div className="row text-center">
+        <div className="row">
           <h1 className="text-uppercase">skills and knowledge</h1>
         </div>
-        <div className="row text-center justify-content-center">
-          <ReactMarkdown className="col-md-10">{skillText}</ReactMarkdown>
+        <div className="row" style={{ textAlign: "justify" }}>
+          <ReactMarkdown>{skillText}</ReactMarkdown>
         </div>
         <div className="row ">
           <div className="d-flex justify-content-center">
