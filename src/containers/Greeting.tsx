@@ -16,8 +16,8 @@ export function Greeting() {
   return (
     <Fade duration={1000} direction="down" triggerOnce>
       <div className="greeting container-lg d-flex justify-content-center align-items-center">
-        <div className="d-flex flex-column flex-md-row justify-content-between">
-          <div className="description-block flex-1 order-1 order-md-0 d-flex justify-content-around flex-column me-2">
+        <div className="d-flex flex-column flex-lg-row justify-content-center">
+          <div className="description-block flex-1 order-1 order-lg-0 d-flex justify-content-around flex-column me-2">
             <h1 className="d-flex align-items-center justify-content-center">
               {"Hi all I'm Gaetano"}
               <span className="ms-1 wave-emoji">{emoji("👋")}</span>
@@ -42,16 +42,11 @@ export function Greeting() {
               )}
             </div>
           </div>
-          <div className="photo-block flex-1 order-0 order-md-1 d-flex justify-content-center align-items-center">
+          <div className="photo-block flex-1 order-0 order-lg-1 d-flex justify-content-center align-items-center">
             <img
               className="rounded-circle m-3 profile-image"
               src="https://raw.githubusercontent.com/dagyu/resume/main/images/profile.jpg"
               alt=""
-              style={{
-                objectFit: "contain",
-                maxWidth: "400px",
-                maxHeight: "400px",
-              }}
             />
           </div>
         </div>

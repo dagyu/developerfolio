@@ -3,7 +3,7 @@
   .description-block {
     width: 50%;
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       width: 100%;
     }
     h1 {
@@ -16,7 +16,7 @@
       }
     }
     p {
-      font-size: 2vw;
+      font-size: x-large;
       font-weight: 200;
       @include media-breakpoint-down(md) {
         font-weight: 300;
@@ -25,13 +25,13 @@
       @include media-breakpoint-down(sm) {
         font-size: medium;
       }
+      @media (max-height: 300px) {
+        font-size: small;
+      }
     }
     a {
-      font-size: 1.5vw;
+      font-size: 20px;
       @include media-breakpoint-down(md) {
-        font-size: 15px;
-      }
-      @include media-breakpoint-down(sm) {
         font-size: 15px;
       }
     }
@@ -42,7 +42,10 @@
       height: 512px;
       width: 512px;
 
-      @include media-breakpoint-down(md) {
+      @media (max-height: 600px) {
+        display: none;
+      }
+      @include media-breakpoint-down(lg) {
         height: 256px;
         width: 256px;
       }
@@ -50,11 +53,6 @@
       @include media-breakpoint-down(sm) {
         height: 200px;
         width: 200px;
-      }
-
-      @media (max-height: 600px) {
-        height: 64px;
-        width: 64px;
       }
     }
   }
