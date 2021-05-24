@@ -1,5 +1,5 @@
 import { Fade } from "react-awesome-reveal";
-import { EducationCard } from "../components/EducationCard";
+import { CardList } from "../components/CardList";
 
 const education = [
   {
@@ -30,12 +30,18 @@ export function Education() {
   return (
     <div className="container-lg">
       <Fade duration={1000} triggerOnce>
-        <h1 className="text-center text-uppercase">Education</h1>
+        <h1 className="text-uppercase">Education</h1>
       </Fade>
       {education.map((school, index) => (
         <div className="row mt-4" key={index}>
           <Fade direction="left" duration={1000} triggerOnce>
-            <EducationCard school={school} />
+            <CardList
+              title={school.schoolName}
+              subtitle={school.subHeader}
+              logo={school.logo}
+              content={school.desc}
+              duration={school.duration}
+            />
           </Fade>
         </div>
       ))}

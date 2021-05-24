@@ -11,20 +11,12 @@ export interface ISchool {
   desc: string;
 }
 
-export interface IEducationCard {
-  school: ISchool;
-}
-
 export interface Experience {
   duration: string;
   typeOfWork?: string;
   role: string;
   desc: string;
   logo?: string;
-}
-
-export interface IExperienceCard {
-  experience: Experience;
 }
 
 export interface IHamburgerMenu {
@@ -109,4 +101,12 @@ export interface ISocialMedia {
 export interface IKnowledgeCard {
   knowledgeLevel: KnowledgeLevel;
   tool: ITool;
+}
+
+export interface ICardList {
+  duration: string;
+  logo?: string;
+  title: string;
+  subtitle?: string;
+  content?: string;
 }
