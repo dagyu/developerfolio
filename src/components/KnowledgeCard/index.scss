@@ -1,0 +1,12 @@
+.tool {
+  cursor: pointer;
+
+  &:hover {
+    img {
+      width: 70px;
+    }
+  }
+  img {
+    width: 40px;
+  }
+}

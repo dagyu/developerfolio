@@ -7,6 +7,8 @@ import { KnowledgeCard } from "../components/KnowledgeCard";
 import ReactMarkdown from "react-markdown";
 import { getEnumKeys, KnowledgeLevel } from "../lib/enums";
 import { useState } from "react";
+import ReactTooltip from "react-tooltip";
+import { getInfo } from "../lib/tools";
 
 type TSkillList = { title: string; list: Array<IKnowledgeCard> };
 
@@ -159,6 +161,13 @@ export function Skills() {
                 key={i}
               >
                 <Skill knowledgeLevel={e} />
+                <ReactTooltip
+                  effect="solid"
+                  getContent={(dataTip) => {
+                    const { name } = getInfo(dataTip);
+                    return <span>{name}</span>;
+                  }}
+                />
               </button>
             ))}
           </div>
