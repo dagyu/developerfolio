@@ -22,9 +22,7 @@ export function Greeting() {
               {"Hi all I'm Gaetano"}
               <span className="ms-1 wave-emoji">{emoji("👋")}</span>
             </h1>
-            <p className="text-center">
-              <ReactMarkdown children={desc} />
-            </p>
+            <ReactMarkdown className="text-center" children={desc} />
             <div className="d-flex justify-content-around">
               <a
                 className="btn btn-outline-primary text-uppercase"

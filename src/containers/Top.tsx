@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import { useContext } from "react";
+import { ScrollContext } from "./App";
 
 export function onTop() {
   document.body.scrollTop = 0; // For Safari
@@ -6,33 +7,16 @@ export function onTop() {
 }
 
 export function Top() {
-  // When the user scrolls down 20px from the top of the document, show the button
-  function scrollFunction() {
-    let element = document.getElementById("topButton");
-    if (!element) {
-    } else if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      element.style.visibility = "visible";
-    } else {
-      element.style.visibility = "hidden";
-    }
-  }
-  useEffect(() => {
-    window.onscroll = function () {
-      scrollFunction();
-    };
-    window.onload = function () {
-      scrollFunction();
-    };
-  });
+  const isScrolled = useContext(ScrollContext);
+
   return (
     <button
       onClick={onTop}
       id="topButton"
       title="Go to top"
-      className="rounded-circle shadow bg-primary text-white"
+      className={`rounded-circle shadow bg-primary text-white ${
+        isScrolled ? "d-block" : "d-none"
+      }`}
     >
       <i className="fas fa-chevron-up p-2"></i>
     </button>

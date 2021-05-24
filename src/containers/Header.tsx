@@ -1,15 +1,17 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Headroom from "react-headroom";
 import { HamburgerMenu } from "../components/HamburgerMenu";
 import { IHeader } from "../types.d";
+import { ScrollContext } from "./App";
 import { onTop } from "./Top";
 
 export function Header(props: IHeader) {
   const [isOpen, setOpen] = useState(false);
+  const isScrolled = useContext(ScrollContext);
 
   return (
     <>
-      {isOpen && (
+      {isOpen && !isScrolled && (
         <div className="menu-mobile w-100 d-flex flex-column justify-content-around align-items-center fs-1">
           {props.items.map((e, i) => (
             <a
