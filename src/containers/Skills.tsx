@@ -1,5 +1,5 @@
 import developer from "../assets/lottie/developer.json";
-import Lottie from "react-lottie";
+import Lottie from "lottie-react";
 import { Fade } from "react-awesome-reveal";
 import { Skill } from "../components/Skill";
 import { IKnowledgeCard } from "../types.d";
@@ -174,14 +174,7 @@ export function Skills() {
         </div>
         <div className="row align-items-center mt-3">
           <div className="col d-none d-sm-block">
-            <Lottie
-              options={{
-                loop: true,
-                autoplay: true,
-                animationData: developer,
-              }}
-              isClickToPauseDisabled={true}
-            />
+            <Lottie animationData={developer} autoPlay={true} loop={true} />
           </div>
           <div className="col" id="legend">
             <h4 className="text-center">Legend</h4>
