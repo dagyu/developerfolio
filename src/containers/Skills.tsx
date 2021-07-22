@@ -28,7 +28,7 @@ const skills: Array<TSkillList> = [
       { tool: "ocaml", knowledgeLevel: KnowledgeLevel.base },
       { tool: "erlang", knowledgeLevel: KnowledgeLevel.base },
       { tool: "c", knowledgeLevel: KnowledgeLevel.base },
-      { tool: "csharp", knowledgeLevel: KnowledgeLevel.base },
+      { tool: "csharp", knowledgeLevel: KnowledgeLevel.medium },
       { tool: "cpp", knowledgeLevel: KnowledgeLevel.base },
       { tool: "go", knowledgeLevel: KnowledgeLevel.base },
       { tool: "rust", knowledgeLevel: KnowledgeLevel.learn },
@@ -73,7 +73,7 @@ const skills: Array<TSkillList> = [
   {
     title: "game programming and computer graphics",
     list: [
-      { tool: "unity", knowledgeLevel: KnowledgeLevel.base },
+      { tool: "unity", knowledgeLevel: KnowledgeLevel.medium },
       { tool: "opengl", knowledgeLevel: KnowledgeLevel.base },
       { tool: "vulkan", knowledgeLevel: KnowledgeLevel.learn },
       { tool: "unreal", knowledgeLevel: KnowledgeLevel.learn },
