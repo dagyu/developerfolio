@@ -1,5 +1,4 @@
 import { Fade } from "react-awesome-reveal";
-import emoji from "react-easy-emoji";
 import ReactMarkdown from "react-markdown";
 
 const resumeLink = process.env.REACT_APP_RESUME_LINK;
