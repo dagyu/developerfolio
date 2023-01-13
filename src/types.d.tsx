@@ -85,7 +85,8 @@ export type ITool =
   | "vscode"
   | "intellij"
   | "androidstudio"
-  | "xcode";
+  | "xcode"
+  | "angular";
 
 export type TSocialMedia =
   | "facebook"

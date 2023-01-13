@@ -1,10 +1,24 @@
 import { Fade } from "react-awesome-reveal";
 import { CardList } from "../components/CardList";
+import logoritmu from "../assets/logos/logo-ritmu.png";
+import logocefriel from "../assets/logos/logo-cefriel.svg";
 
 const experiences = [
   {
+    duration: "Sept 2021 - Sept 2022",
+    role: "Frontend Developer, DevOps Engineer",
+    typeOfWork: "Internship",
+    desc: `I did a one-year internship at the Cefriel company where I was able to:
+* develop a website in Angular
+* engineer CI/CD pipeline
+* develop some internal business software components
+
+It was my first experience in a company and it was very formative from a teamwork and time management point of view.`,
+    logo: logocefriel,
+  },
+  {
     duration: "2019-2020",
-    role: "Software Engineer/Full Stack Developer",
+    role: "Software Engineer, Full Stack Developer",
     typeOfWork: "Freelance",
     desc: `
 I developed a mobile app with [tomgeek27](https://github.com/tomgeek27) and [Alice Paracolli](https://www.behance.net/aaliceparaf66a) for a client. 
@@ -19,7 +33,7 @@ In particular I:
 * developed an algorithm that analyze the breath frequency using machine learning techniques 
 * developed some front-end components.
     `,
-    logo: " https://www.ritm-u.com/wp-content/uploads/2020/02/cropped-cropped-New-logo-yu-tuberrr-4-2.png",
+    logo: logoritmu,
   },
 ];
 

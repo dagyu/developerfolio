@@ -16,6 +16,7 @@ import nodejs from "../assets/images/nodejs.png";
 import spring from "../assets/images/spring.png";
 import ktor from "../assets/images/ktor.png";
 import flutter from "../assets/images/flutter.png";
+import angular from "../assets/images/angular.png";
 import react from "../assets/images/react.png";
 import graphql from "../assets/images/graphql.png";
 import grpc from "../assets/images/grpc.png";
@@ -225,6 +226,11 @@ export function getInfo(tool: ITool | string): {
       return {
         img: spring,
         name: "Spring Framework",
+      };
+    case "angular":
+      return {
+        img: angular,
+        name: "Angular",
       };
     case "ktor":
       return {

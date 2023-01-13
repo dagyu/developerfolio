@@ -20,7 +20,7 @@ export function Greeting() {
           <div className="description-block flex-1 order-1 order-lg-0 d-flex justify-content-around flex-column me-2">
             <h1 className="d-flex align-items-center justify-content-center">
               {"Hi all I'm Gaetano"}
-              <span className="ms-1">{emoji("👋")}</span>
+              <span className="ms-1">{"👋"}</span>
             </h1>
             <ReactMarkdown className="text-center" children={desc} />
             <div className="d-flex justify-content-around">

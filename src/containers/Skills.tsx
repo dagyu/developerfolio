@@ -39,7 +39,7 @@ const skills: Array<TSkillList> = [
     list: [
       { tool: "nodejs", knowledgeLevel: KnowledgeLevel.advanced },
       { tool: "spring", knowledgeLevel: KnowledgeLevel.base },
-      { tool: "ktor", knowledgeLevel: KnowledgeLevel.learn },
+      { tool: "ktor", knowledgeLevel: KnowledgeLevel.base },
     ],
   },
   {
@@ -47,6 +47,7 @@ const skills: Array<TSkillList> = [
     list: [
       { tool: "flutter", knowledgeLevel: KnowledgeLevel.advanced },
       { tool: "react", knowledgeLevel: KnowledgeLevel.advanced },
+      { tool: "angular", knowledgeLevel: KnowledgeLevel.advanced },
     ],
   },
   {
@@ -102,6 +103,9 @@ const skills: Array<TSkillList> = [
     ],
   },
 ];
+
+// Find a better solution
+const SPLIT = Math.ceil(skills.length / 2) - 1;
 
 const legend: Array<string> = [
   "I would like to learn it or I am learning it but I have not practiced yet.",
@@ -175,10 +179,10 @@ export function Skills() {
         <div className="row"></div>
         <div className="row">
           <div className="col-sm">
-            {skills.slice(0, Math.ceil(skills.length / 2)).map(createSkillList)}
+            {skills.slice(0, SPLIT).map(createSkillList)}
           </div>
           <div className="col-sm">
-            {skills.slice(Math.ceil(skills.length / 2)).map(createSkillList)}
+            {skills.slice(SPLIT).map(createSkillList)}
           </div>
         </div>
         <div className="row align-items-center mt-3">

@@ -1,5 +1,6 @@
 import { Fade } from "react-awesome-reveal";
 import { CardList } from "../components/CardList";
+import logoups from "../assets/logos/logo-ups.svg";
 
 const education = [
   {
@@ -14,7 +15,7 @@ const education = [
     duration: "Sep 2019 - Feb 2020",
     schoolName: "University of Paris-Saclay",
     subHeader: "Erasmus",
-    logo: "https://i2.wp.com/scholars4is.com/wp-content/uploads/2020/04/10.png?fit=830%2C433&ssl=1",
+    logo: logoups,
     desc: "I followed a master of Data Science and passed 5 exams. That was a really intensive experience where I improved a lot my adaptive skills.",
   },
   {
