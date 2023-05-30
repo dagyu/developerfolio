@@ -5,10 +5,6 @@ import { ISocialMedia } from "../types.d";
 
 const contacts: Array<ISocialMedia> = [
   {
-    url: "https://www.facebook.com/gaetano.dagostino.16/",
-    socialMedia: "facebook",
-  },
-  {
     url: "https://github.com/dagyu",
     socialMedia: "github",
   },
@@ -17,7 +13,7 @@ const contacts: Array<ISocialMedia> = [
     socialMedia: "gmail",
   },
   {
-    url: "https://www.linkedin.com/in/dagyu/",
+    url: "https://www.linkedin.com/in/dagyu",
     socialMedia: "linkedin",
   },
   {

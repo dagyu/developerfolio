@@ -4,11 +4,11 @@ import logoups from "../assets/logos/logo-ups.svg";
 
 const education = [
   {
-    duration: "2018 - in progress",
+    duration: "2018 - 2023",
     schoolName: "University of Milan",
     subHeader: "Master of Science",
     logo: "https://upload.wikimedia.org/wikipedia/en/e/e4/University_of_Milan_logo.png",
-    desc: "",
+    desc: "**Final mark**: 110/110 cum laude\n\n**Thesis title**:  An extensible typesystem for language server protocol development\n\n**Supervisor**: [Walter Cazzola](https://cazzola.di.unimi.it/)",
     descBullets: [],
   },
   {
