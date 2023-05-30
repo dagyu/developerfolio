@@ -8,8 +8,9 @@ I am a software engineer and a passionate programmer.
 
 I had experience with Web and Mobile development.
 
-In general I prefer to write code and design software 
-architectures rather than  dealing with graphics or UI stuff.
+Generally, I'm more into coding and designing software architectures 
+rather than dealing with graphics or UI-related tasks. However, I do find it 
+enjoyable to experiment with graphics when given the opportunity.
 `;
 export function Greeting() {
   return (
